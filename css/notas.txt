@@ -1,0 +1,117 @@
+NOTAS CSS
+
+A sintaxe do css é baseada em:
+
+seletor {
+	propriedade: valor;
+}
+
+<link>
+Tag usada para chamar o seletor de um css externo
+Utiliza-se também os atributos:
+<link rel="stylesheet" href="./arquivo.css" />
+
+Seletores
+seletor é o elemento ao qual se quer aplicar o css
+Pode-se definir um seletor através de um id. No arquivo css crie um seletor com a "#". O id é único na página, então é indicado para pequenos detalhes, coisas específicas, etc
+
+#id_de_algum_elemento{
+propriedade: valor;
+}
+
+
+Para selecionar um elemento através de uma class usa-se um .
+.nome_da_class {
+propriedade: valor;
+}
+
+Para selecionar todos os elementos da página usa-se o *, todos os elementos que não foram especificados nos seletores existentes, seguirão a estilização do *
+
+* {
+propriedade: valor;
+}
+
+# Propriedades
+
+## display
+Configura a forma que o elemento será exibido
+
+display: inline 
+quero ele em uma linha
+
+display: block 
+em blocos
+
+display: flex
+lado a lado
+
+display: none 
+nem quero ver esses elementos
+
+## flex-wrap: wrap
+para fazer a quebra de linha automática ao se inserir artigos
+
+## position
+
+position: absolute;
+faz com que a imagem não seja mais considerada ao montar um elemento, ela fica solta na página
+
+position: relative;
+faz com que todo o conteúdo fique dentro da tag
+
+position: fixed;
+deixa o conteúdo fixo na tela independente do rolar da página, interessante para o botão de contato por exemplo
+
+## padding: valor;
+usado para alterar o espaçamento
+
+## margin-bottom: valor;
+usado para acrescentar margem inferior
+
+## margin-top: valor;
+usado para acrescentar margem superior
+
+## background-color: valor
+para editar o fundo do conteúdo
+
+## color: valor;
+para editar a cor do texto
+
+o elemento <a>
+possui por padrão o display: inline;
+
+## display: inline-block;
+adiciona uma quebra de linha, corrigindo o problema de sobreposição do conteúdo
+
+## align-items: center;
+para alinhar horizontalmente um conteúdo
+
+## justify-content: space-between;
+para criar um espaçamento igualitário entre os conteúdos
+
+## font-family: nome da fonte, nome da fonte, tipo de fonte;
+para alterar a fonte do elemento selecionado
+
+##font-size: valor;
+para alterar o tamanho da fonte
+
+## text-decoration: none;
+para remover o underline dos links
+
+# Para alterar um estado de um elemento, adiciona-se : no seletor, ex:
+
+.articles article a:hover {
+	text-decoration: uderline;
+}
+
+Nesse caso, o estado foi alterado para quando o mouse passar encima (hover), aparece o efeito sublinhado nos elementos selecionados
+
+
+
+
+
+
+
+
+
+
